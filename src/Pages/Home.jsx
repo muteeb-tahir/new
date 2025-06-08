@@ -35,14 +35,13 @@ export default function Home() {
   const soonEvents = getSoonEvents();
 
   return (
-    <div className="page">
+    <div className="page home-page">
       <h1>Welcome to Your Event Dashboard</h1>
       <p>
         Current Time: <strong>{dateTime.toLocaleTimeString()}</strong><br />
         Today is: <strong>{dateTime.toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</strong>
       </p>
 
-      {}
       <div className="card">
         <h2>📅 Upcoming Events</h2>
         {upcomingEvents.length > 0 ? (
@@ -58,7 +57,6 @@ export default function Home() {
         )}
       </div>
 
-      {}
       <div className="card">
         <h2>📊 Event Stats</h2>
         <ul>
@@ -68,7 +66,6 @@ export default function Home() {
         </ul>
       </div>
 
-      {}
       <div className="card">
         <h2>🔔 Notifications</h2>
         {soonEvents.length > 0 ? (
@@ -84,7 +81,6 @@ export default function Home() {
         )}
       </div>
 
-      {}
       <div className="card">
         <h2>🧠 Suggested Time Slot</h2>
         <p>

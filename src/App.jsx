@@ -1,10 +1,10 @@
-import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Home from './Pages/Home'
-import Events from './pages/Events'
-import AddEvent from './Pages/AddEvent'
-import Profile from './pages/Profile'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './Pages/Home';
+import Events from './Pages/Events';
+import AddEvent from './Pages/AddEvent';
+import Profile from './Pages/Profile';
 
 export default function App() {
   return (
@@ -17,5 +17,5 @@ export default function App() {
         <Route path="/profile" element={<Profile />} />
       </Routes>
     </Router>
-  )
+  );
 }
