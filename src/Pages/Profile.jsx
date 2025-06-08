@@ -6,8 +6,8 @@ export default function Profile() {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    const savedName = localStorage.getItem('profileName') || 'John Doe';
-    const savedEmail = localStorage.getItem('profileEmail') || 'john@example.com';
+    const savedName = localStorage.getItem('profileName') || 'MUTEEB';
+    const savedEmail = localStorage.getItem('profileEmail') || 'muteeb@mail.com';
     setName(savedName);
     setEmail(savedEmail);
   }, []);
